@@ -1,10 +1,10 @@
 import React from "react";
 import Slot from "./Slot";
 
-export default function SlotList({ isLoading, slots }) {
+export default function SlotList({ isLoading, selectedDateData }) {
     const LoadingRow = (
         <div className="loading-item">
-            <div class="spinner"></div>
+            <p>Loading...</p>
         </div>
     );
 
@@ -27,7 +27,7 @@ export default function SlotList({ isLoading, slots }) {
         );
     }
 
-    if (slots.length === 0) {
+    if (selectedDateData.length === 0) {
         return (
             <div className="list-items" key={"empty"} data-testid="empty">
                 <p>No hay Slots</p>
@@ -37,7 +37,7 @@ export default function SlotList({ isLoading, slots }) {
 
     return (
         <div className="list-items">
-            {slots.map((slot) => (
+            {selectedDateData.map((slot) => (
                 <Slot key={slot.startTime} slot={slot}/>
             ))}
         </div>
