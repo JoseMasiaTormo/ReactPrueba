@@ -13,14 +13,14 @@ const Template = args => <SlotList {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     slots: [
-        { ...SlotStories.Default.args.slot, startTime: '12:30:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '12:45:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '13:00:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '13:15:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '13:30:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '13:45:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '14:00:00', usersAvailable: '10'},
-        { ...SlotStories.Default.args.slot, startTime: '14:15:00', usersAvailable: '10'},
+        { ...SlotStories.Default.args.slot, startTime: '12:30:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '12:45:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '13:00:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '13:15:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '13:30:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '13:45:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '14:00:00', usersAvailable: '17'},
+        { ...SlotStories.Default.args.slot, startTime: '14:15:00', usersAvailable: '17'},
     ],
 };
 

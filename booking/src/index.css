@@ -469,6 +469,7 @@ textarea {
   border-radius: 20px;
   width: 120px;
   margin: 5px;
+  user-select: none;
 }
 
 .start {
@@ -536,10 +537,32 @@ textarea {
   display: flex;
 }
 
-.list-items {
+.center-div {
   width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slots-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-item {
+  margin-bottom: 5px;
 }
 
 .spinner {

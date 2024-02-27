@@ -12,7 +12,7 @@ export const Default = Template.bind({});
 Default.args = {
     slot: {
         startTime: '12:30:00',
-        usersAvailable: '10',
+        usersAvailable: '17',
         state: 'SLOT_DEFAULT'
     },
 };
