@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -459,6 +461,9 @@ textarea {
   max-width: 100%;
 } */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .slot {
   display: flex;
@@ -470,6 +475,7 @@ textarea {
   width: 120px;
   margin: 5px;
   user-select: none;
+
 }
 
 .start {
@@ -502,8 +508,8 @@ textarea {
 }
 
 .checkbox-round {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   vertical-align: middle;
   border: 2px solid #afafaf;
@@ -511,6 +517,15 @@ textarea {
   outline: none;
   cursor: pointer;
   margin-left: 6px;
+}
+
+.slot.SLOT_DISABLED {
+  border: 1px solid #afafaf;
+  color: #6b6b6b;
+}
+
+.slot.SLOT_DISABLED .users{
+  background-color: #6b6b6b;
 }
 
 .slot.SLOT_DISABLED input {
